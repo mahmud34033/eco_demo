@@ -2,6 +2,9 @@ import os
 from aiogram import Bot, Dispatcher, executor, types
 import pandas as pd
 
+from keep_alive import keep_alive
+keep_alive()
+
 bot = Bot(token=os.environ.get('BOT_TOKEN'))
 dp = Dispatcher(bot)
 
